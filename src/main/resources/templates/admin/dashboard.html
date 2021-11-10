@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org"
+	th:replace="admin/admin-base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<section>
+
+		<!-- Page content holder -->
+		<div class="page-content p-3" id="content">
+			<!-- Toggle button -->
+			<button id="sidebarCollapse" type="button"
+				class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4">
+				<i class="fa fa-bars mr-2"></i><small
+					class="text-uppercase font-weight-bold"></small>
+			</button>
+
+			<!-- Demo content -->
+			<h2 class="display-4 text-white text-center">Dashboard</h2>
+			<div class="separator"></div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+						<div class="card-box bg-blue">
+							<div class="inner">
+								<h3>13436</h3>
+								<p>Movies</p>
+							</div>
+							<div class="icon">
+								<i class="fa fa-film" aria-hidden="true"></i>
+							</div>
+							<a href="#" class="card-box-footer">View More <i
+								class="fa fa-arrow-circle-right"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-sm-6">
+						<div class="card-box bg-green">
+							<div class="inner">
+								<h3>58</h3>
+								<p>Theatres</p>
+							</div>
+							<div class="icon">
+								<i class="fa fa-university" aria-hidden="true"></i>
+							</div>
+							<a href="#" class="card-box-footer">View More <i
+								class="fa fa-arrow-circle-right"></i></a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="card-box bg-orange">
+							<div class="inner">
+								<h3>5464</h3>
+								<p>Actors</p>
+							</div>
+							<div class="icon">
+								<i class="fa fa-users" aria-hidden="true"></i>
+							</div>
+							<a href="#" class="card-box-footer">View More <i
+								class="fa fa-arrow-circle-right"></i></a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="card-box bg-red">
+							<div class="inner">
+								<h3>723</h3>
+								<p>Users</p>
+							</div>
+							<div class="icon">
+								<i class="fa fa-user-plus"></i>
+							</div>
+							<a href="#" class="card-box-footer">View More <i
+								class="fa fa-arrow-circle-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</body>
+</html>

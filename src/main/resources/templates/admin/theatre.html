@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org"
+	th:replace="admin/admin-base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<section>
+		<!-- Page content holder -->
+		<div class="page-content p-3" id="content">
+			
+				<!-- Toggle button -->
+			<button id="sidebarCollapse" type="button"
+				class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-1">
+				<i class="fa fa-bars mr-2"></i><small
+					class="text-uppercase font-weight-bold"></small>
+			</button>
+
+			<!-- Demo content -->
+			<h2 class="text-white text-center">Theatre</h2>
+			
+			<div class="separator"></div>
+			<h2>Theatres here</h2>
+		</div>
+	</section>
+
+
+</body>
+</html>

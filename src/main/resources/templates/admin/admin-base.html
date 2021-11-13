@@ -3,103 +3,110 @@
 	th:fragment="layout(content)">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Admin</title>
+<title>Admin</title>
 
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-   
+<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+	rel="stylesheet" />
+<!-- Google Fonts -->
+<link
+	href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+	rel="stylesheet" />
+<!-- MDB -->
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+	rel="stylesheet" />
 
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+<link rel="stylesheet"
+	href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
 
-    <link th:href="@{/css/style5.css}" rel="stylesheet" />
+<link th:href="@{/css/style5.css}" rel="stylesheet" />
 </head>
 
 <body>
 
-    <!-- Vertical navbar -->
-<div class="vertical-nav bg-white" id="sidebar">
-  <div class="py-4 px-3 mb-4 bg-light">
-    <div class="media d-flex align-items-center"><img src="https://bootstrapious.com/i/snippets/sn-v-nav/avatar.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
-      <div class="media-body">
-        <h4 class="m-0">Jason Doe</h4>
-        <p class="font-weight-light text-muted mb-0">Web developer</p>
-      </div>
-    </div>
-  </div>
+	<!-- Vertical navbar -->
+	<div class="vertical-nav bg-white" id="sidebar">
+		<div class="py-4 px-3 mb-4 bg-light">
+			<div class="media d-flex align-items-center">
+				<img src="https://bootstrapious.com/i/snippets/sn-v-nav/avatar.png"
+					alt="..." width="65"
+					class="mr-3 rounded-circle img-thumbnail shadow-sm">
+				<div class="media-body">
+					<h4 class="m-0">Jason Doe</h4>
+					<p class="font-weight-light text-muted mb-0">Web developer</p>
+				</div>
+			</div>
+		</div>
 
-  <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
+		<p
+			class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
 
-  <ul class="nav flex-column bg-white mb-0">
-    <li class="nav-item">
-      <a href="/admin" class="nav-link text-dark font-italic bg-light">
-                <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
-                Home
-            </a>
-    </li>
-    <li class="nav-item">
-      <a href="/admin/theatres" class="nav-link text-dark font-italic">
-                <i class="fa fa-university mr-3 text-primary fa-fw"></i>
-                Theatre
-            </a>
-    </li>
-    <li class="nav-item">
-      <a href="/admin/movies" class="nav-link text-dark font-italic">
-                <i class="fa fa-film mr-3 text-primary fa-fw"></i>
-                Movies
-            </a>
-    </li>
-    <li class="nav-item">
-      <a href="/admin/actors" class="nav-link text-dark font-italic">
-                <i class="fa fa-users mr-3 text-primary fa-fw"></i>
-                Actor
-            </a>
-    </li>
-  </ul>
+		<ul class="nav flex-column bg-white mb-0">
+			<li class="nav-item nav-col"><a href="/admin"
+				class="nav-link text-dark font-italic bg-light"> <i
+					class="fa fa-th-large mr-3 text-primary fa-fw"></i> Home
+			</a></li>
+			<li class="nav-item nav-col"><a href="/admin/theatres"
+				class="nav-link text-dark font-italic"> <i
+					class="fa fa-university mr-3 text-primary fa-fw"></i> Theatre
+			</a></li>
+			<li class="nav-item nav-col"><a href="/admin/movies"
+				class="nav-link text-dark font-italic"> <i
+					class="fa fa-film mr-3 text-primary fa-fw"></i> Movies
+			</a></li>
+			<li class="nav-item nav-col"><a href="/admin/actors"
+				class="nav-link text-dark font-italic"> <i
+					class="fa fa-users mr-3 text-primary fa-fw"></i> Actor
+			</a></li>
+		</ul>
 
-  <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Settings</p>
+		<p
+			class="text-gray nav-col font-weight-bold text-uppercase px-3 small py-4 mb-0">Settings</p>
 
-  <ul class="nav flex-column bg-white mb-0">
-    <li class="nav-item">
-      <a href="/admin/profile" class="nav-link text-dark font-italic">
-                <i class="fa fa-user mr-3 text-primary fa-fw"></i>
-                My Profile
-            </a>
-    </li>
-    <li class="nav-item">
-      <a href="/admin/logout" class="nav-link text-dark font-italic">
-                <i class="fa fa-times-circle mr-3 text-primary fa-fw" aria-hidden="true"></i>
-                Logout
-            </a>
-    </li>
-    
-  </ul>
-</div>
-<!-- End vertical navbar -->
+		<ul class="nav flex-column bg-white mb-0">
+			<li class="nav-item nav-col"><a href="/admin/profile"
+				class="nav-link text-dark font-italic"> <i
+					class="fa fa-user mr-3 text-primary fa-fw"></i> My Profile
+			</a></li>
+			<li class="nav-item nav-col"><a href="/admin/logout"
+				class="nav-link text-dark font-italic"> <i
+					class="fa fa-times-circle mr-3 text-primary fa-fw"
+					aria-hidden="true"></i> Logout
+			</a></li>
 
-  
+		</ul>
+	</div>
+	<!-- End vertical navbar -->
 
-<div th:replace="${content}"></div>
 
-<!-- End demo content -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<script type="text/javascript">
-$(function() {
-	  // Sidebar toggle behavior
-	  $('#sidebarCollapse').on('click', function() {
-	    $('#sidebar, #content').toggleClass('active');
-	  });
-	});
+	<div th:replace="${content}"></div>
 
-</script>
+	<!-- End demo content -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+	<!-- MDB -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script th:src="@{/js/admin/movies.js}"></script>
+	<script type="text/javascript">
+		$(function() {
+			// Sidebar toggle behavior
+			$('#sidebarCollapse').on('click', function() {
+				$('#sidebar, #content').toggleClass('active');
+			});
+		});
+	</script>
 </body>
 
 </html>

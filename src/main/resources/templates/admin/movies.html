@@ -19,38 +19,132 @@
 			<!-- Demo content -->
 			<h2 class="heading text-center">Movies</h2>
 			<div class="separator"></div>
+			<div class="container mb-3">
+
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+					data-bs-target="#exampleModal" data-bs-whatever="@mdo">Add
+					New Movie</button>
+				<div class="modal fade" id="exampleModal" tabindex="-1"
+					aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">New Movie</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"
+									aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="mb-3">
+										<label for="recipient-name" class="col-form-label">Title</label>
+										<input type="text" class="form-control" id="recipient-name">
+									</div>
+
+									<div class="mb-3">
+										<label for="message-text" class="col-form-label">Genre</label>
+										<select class="form-select"
+											aria-label="Default select example">
+											<option selected>Select genre</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
+									</div>
+
+									<div class="mb-3">
+										<label for="message-text" class="col-form-label">Cast</label>
+										<textarea class="form-control" id="message-text"></textarea>
+									</div>
+
+									<div class="mb-3">
+										<label for="formFileDisabled" class="form-label">Select
+											Movie Image</label> <input class="form-control" type="file"
+											id="formFileDisabled" />
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary"
+									data-bs-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Send
+									message</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="container">
+
 				<div class="table-responsive">
-					<table class="table table-hover table-sm ">
+					<table class="table table-hover text-nowrap">
 						<thead>
 							<tr>
-								<th scope="col">#</th>
-								<th scope="col">Lorem</th>
-								<th scope="col">Ipsum</th>
-								<th scope="col">Dolor</th>
+								<th scope="col">ID</th>
+								<th scope="col">Title</th>
+								<th scope="col">Genre</th>
+								<th scope="col">Cast</th>
+								<th scope="col">Product Revenue</th>
+								<th scope="col" colspan="2" ]>Actions</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<th scope="row">1</th>
-								<td>Sit</td>
-								<td>Amet</td>
-								<td>Consectetur</td>
+								
+								<td>18,492</td>
+								<td>228</td>
+								<td>350</td>
+								<td>$4,787.64</td>
+								<td>$13.68</td>
+								<td>
+									<button class="btn btn-primary btn-sm">Edit</button>
+									<button class="btn btn-danger btn-sm">Delete</button>
+								</td>
 							</tr>
 							<tr>
-								<th scope="row">2</th>
-								<td>Adipisicing</td>
-								<td>Elit</td>
-								<td>Sint</td>
+								
+								<td><span class="text-danger"> <i
+										class="fas fa-caret-down me-1"></i><span>-48.8%%</span>
+								</span></td>
+								<td><span class="text-success"> <i
+										class="fas fa-caret-up me-1"></i><span>14.0%</span>
+								</span></td>
+								<td><span class="text-success"> <i
+										class="fas fa-caret-up me-1"></i><span>46.4%</span>
+								</span></td>
+								<td><span class="text-success"> <i
+										class="fas fa-caret-up me-1"></i><span>29.6%</span>
+								</span></td>
+								<td><span class="text-danger"> <i
+										class="fas fa-caret-down me-1"></i><span>-11.5%</span>
+								</span></td>
+								<td>
+									<button class="btn btn-primary btn-sm">Edit</button>
+									<button class="btn btn-danger btn-sm">Delete</button>
+								</td>
 							</tr>
 							<tr>
-								<th scope="row">3</th>
-								<td>Hic</td>
-								<td>Fugiat</td>
-								<td>Temporibus</td>
+								
+								<td><span class="text-danger"> <i
+										class="fas fa-caret-down me-1"></i><span>-17,654</span>
+								</span></td>
+								<td><span class="text-success"> <i
+										class="fas fa-caret-up me-1"></i><span>28</span>
+								</span></td>
+								<td><span class="text-success"> <i
+										class="fas fa-caret-up me-1"></i><span>111</span>
+								</span></td>
+								<td><span class="text-success"> <i
+										class="fas fa-caret-up me-1"></i><span>$1,092.72</span>
+								</span></td>
+								<td><span class="text-danger"> <i
+										class="fas fa-caret-down me-1"></i><span>$-1.78</span>
+								</span></td>
+								<td>
+									<button class="btn btn-primary btn-sm">Edit</button>
+									<button class="btn btn-danger btn-sm">Delete</button>
+								</td>
 							</tr>
 						</tbody>
-
 					</table>
 				</div>
 			</div>

@@ -69,6 +69,10 @@ body {
   overflow-x: hidden;
 }
 
+.text-my{
+	color: black;
+}
+
 .separator {
   margin: 3rem 0;
   border-bottom: 1px dashed #4d4c4c;
@@ -83,6 +87,14 @@ body {
   color: #aaa;
 }
 
+
+.nav-col{
+	background-color: #f8f9fa;
+}
+
+.nav-col:hover{
+	background-color: #dae0e5 !important;
+}
 
 .card-box {
     position: relative;
